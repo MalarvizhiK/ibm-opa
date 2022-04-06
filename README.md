@@ -19,7 +19,7 @@ chmod 755 ./opa
 3. Input a json to OPA Server.   
 
 ```
-malark@Malars-MacBook-Pro extremeblue % curl localhost:8181 -i -d @simplified_diagram.json -H 'Content-Type: application/json'
+malark@Malars-MacBook-Pro extremeblue % curl localhost:8181 -i -d @cis_example.json -H 'Content-Type: application/json'
 HTTP/1.1 100 Continue
 
 HTTP/1.1 200 OK
