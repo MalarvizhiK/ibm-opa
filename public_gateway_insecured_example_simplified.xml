@@ -1,0 +1,26 @@
+ <diagram id="0d7cefc2-ccd6-e077-73ed-a8e48b0cddf6" name="Page-1">
+<objects>
+        <object label="" name="user" id="Mw2x-DUOELCQGC9saPyx-106"/>
+		<object label="IBM Cloud" name="ibm_cloud" id="uuWAVS72PrKm678KzFLa-30"/>
+		<object label="VPC" name="ibm_is_vpc" id="uuWAVS72PrKm678KzFLa-29"/>
+		<object label="Subnet:ACL" name="ibm_is_subnet" id="uuWAVS72PrKm678KzFLa-35"/>
+		<object label="" name="ibm_is_instance" id="uuWAVS72PrKm678KzFLa-37" parent="uuWAVS72PrKm678KzFLa-35" />
+		<object label="" name="ibm_is_instance" id="uuWAVS72PrKm678KzFLa-38" parent="uuWAVS72PrKm678KzFLa-35" />
+		<object label="" name="ibm_is_floating_ip" id="uuWAVS72PrKm678KzFLa-36"/>
+		<object label="" name="ibm_is_public_gateway" id="uuWAVS72PrKm678KzFLa-46"/>
+</objects>
+<edges>	
+	<edge source="Mw2x-DUOELCQGC9saPyx-106" target="uuWAVS72PrKm678KzFLa-36" value="SSH,TCP" />
+	<!-- user-fip -->
+	<edge source="uuWAVS72PrKm678KzFLa-36" target="Mw2x-DUOELCQGC9saPyx-106" />
+	<!-- fip - user -->
+	<edge source="uuWAVS72PrKm678KzFLa-38" target="uuWAVS72PrKm678KzFLa-36" />
+	<!-- instance - fip -->
+	<edge source="uuWAVS72PrKm678KzFLa-36" target="uuWAVS72PrKm678KzFLa-38" value="SSH,TCP" />
+	<!-- fip - instance -->
+	<edge source="uuWAVS72PrKm678KzFLa-46" target="Mw2x-DUOELCQGC9saPyx-106" value="TCP" />
+	<!-- gw-user -->
+	<edge source="uuWAVS72PrKm678KzFLa-46" target="uuWAVS72PrKm678KzFLa-35" value="TCP" /> 
+	<!-- gw-subnet -->
+</edges>
+</diagram>

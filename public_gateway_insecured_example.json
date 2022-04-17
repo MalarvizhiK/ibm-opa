@@ -1,0 +1,81 @@
+
+
+{
+   "id": "0d7cefc2-ccd6-e077-73ed-a8e48b0cddf6",
+   "name": "Page-1",
+   "objects": [
+      {
+         "label": "",
+         "name": "user",
+         "id": "Mw2x-DUOELCQGC9saPyx-106"
+      },
+      {
+         "label": "IBM Cloud",
+         "name": "ibm_cloud",
+         "id": "uuWAVS72PrKm678KzFLa-30"
+      },
+      {
+         "label": "VPC",
+         "name": "ibm_is_vpc",
+         "id": "uuWAVS72PrKm678KzFLa-29"
+      },
+      {
+         "label": "Subnet:ACL",
+         "name": "ibm_is_subnet",
+         "id": "uuWAVS72PrKm678KzFLa-35"
+      },
+      {
+         "label": "",
+         "name": "ibm_is_instance",
+         "id": "uuWAVS72PrKm678KzFLa-37",
+         "parent": "uuWAVS72PrKm678KzFLa-35"
+      },
+      {
+         "label": "",
+         "name": "ibm_is_instance",
+         "id": "uuWAVS72PrKm678KzFLa-38",
+         "parent": "uuWAVS72PrKm678KzFLa-35"
+      },
+      {
+         "label": "",
+         "name": "ibm_is_floating_ip",
+         "id": "uuWAVS72PrKm678KzFLa-36"
+      },
+      {
+         "label": "",
+         "name": "ibm_is_public_gateway",
+         "id": "uuWAVS72PrKm678KzFLa-46"
+      }
+   ],
+   "edges": [
+      {
+         "source": "Mw2x-DUOELCQGC9saPyx-106",
+         "target": "uuWAVS72PrKm678KzFLa-36",
+         "value": "SSH,TCP"
+      },
+      {
+         "source": "uuWAVS72PrKm678KzFLa-36",
+         "target": "Mw2x-DUOELCQGC9saPyx-106"
+      },
+      {
+         "source": "uuWAVS72PrKm678KzFLa-38",
+         "target": "uuWAVS72PrKm678KzFLa-36"
+      },
+      {
+         "source": "uuWAVS72PrKm678KzFLa-36",
+         "target": "uuWAVS72PrKm678KzFLa-38",
+         "value": "SSH,TCP"
+      },
+      {
+         "source": "uuWAVS72PrKm678KzFLa-46",
+         "target": "Mw2x-DUOELCQGC9saPyx-106",
+         "value": "TCP"
+      },
+      {
+         "source": "uuWAVS72PrKm678KzFLa-46",
+         "target": "uuWAVS72PrKm678KzFLa-35",
+         "value": "TCP"
+      }
+   ]
+}
+
