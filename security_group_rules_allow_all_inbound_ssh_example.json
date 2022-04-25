@@ -1,0 +1,76 @@
+
+
+{
+   "id": "0d7cefc2-ccd6-e077-73ed-a8e48b0cddf6",
+   "name": "Page-1",
+   "objects": [
+      {
+         "label": "",
+         "name": "user",
+         "id": "Mw2x-DUOELCQGC9saPyx-106"
+      },
+      {
+         "label": "IBM Cloud",
+         "name": "ibm_cloud",
+         "id": "uuWAVS72PrKm678KzFLa-30"
+      },
+      {
+         "label": "VPC",
+         "name": "ibm_is_vpc",
+         "id": "uuWAVS72PrKm678KzFLa-29",
+         "parent": "uuWAVS72PrKm678KzFLa-30"
+      },
+      {
+         "label": "Subnet:ACL",
+         "name": "ibm_is_subnet",
+         "id": "uuWAVS72PrKm678KzFLa-35",
+         "parent": "uuWAVS72PrKm678KzFLa-29"
+      },
+      {
+         "label": "Security Group",
+         "direction": "inbound",
+         "remote": "192.26.1.27",
+         "ssh": "22",
+         "name": "ibm_is_security_group_rule",
+         "id": "E6gWafBUsZ2qjnJA4JxJ-15",
+         "parent": "uuWAVS72PrKm678KzFLa-35"
+      },
+      {
+         "label": "",
+         "name": "ibm_is_instance",
+         "id": "uuWAVS72PrKm678KzFLa-37",
+         "parent": "E6gWafBUsZ2qjnJA4JxJ-15"
+      },
+      {
+         "label": "",
+         "name": "ibm_is_floating_ip",
+         "id": "uuWAVS72PrKm678KzFLa-36",
+         "parent": "uuWAVS72PrKm678KzFLa-29"
+      },
+      {
+         "label": "",
+         "name": "ibm_edge",
+         "value": "",
+         "id": "uuWAVS72PrKm678KzFLa-41"
+      },
+      {
+         "label": "",
+         "name": "ibm_edge",
+         "value": "SSH",
+         "id": "uuWAVS72PrKm678KzFLa-33"
+      }
+   ],
+   "edges": [
+      {
+         "source": "uuWAVS72PrKm678KzFLa-36",
+         "target": "uuWAVS72PrKm678KzFLa-37",
+         "value": ""
+      },
+      {
+         "source": "Mw2x-DUOELCQGC9saPyx-106",
+         "target": "uuWAVS72PrKm678KzFLa-36",
+         "value": "SSH"
+      }
+   ]
+}
+
