@@ -56,3 +56,27 @@ Content-Length: 5
 false% 
        
 ```
+
+### Use case 3 :
+
+2.  Start the OPA Server.   
+
+```
+./opa run --server --set=default_decision=ibm/network/has_vpc_security_group_rules_allow_all_inbound_ssh ./network_policy2.rego
+
+```
+
+3. Input a json to OPA Server.   
+
+```
+curl localhost:8181 -i -d @security_group_rules_allow_all_inbound_ssh_example.json -H 'Content-Type: application/json'
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sun, 17 Apr 2022 17:59:50 GMT
+Content-Length: 5
+
+false% 
+       
+```
